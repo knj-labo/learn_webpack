@@ -1,8 +1,3 @@
-type Words = string[];
-
-const message: Words = ["Hello", "world!"];
-
-console.log(message.join(" "));
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 

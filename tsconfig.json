@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    // "allowSyntheticDefaultImports": true,
+    "strict": true,
     "esModuleInterop": true,
     "module": "ESNext",
     "moduleResolution": "node",
@@ -8,7 +8,6 @@
     "noImplicitReturns": true,
     "outDir": "./build/",
     "sourceMap": true,
-    "strict": true,
     "target": "es2015",
     "jsx": "react"
   },
