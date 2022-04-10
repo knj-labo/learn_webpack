@@ -17,6 +17,7 @@ const prodConfig: webpack.Configuration = merge(baseConfig, {
     ],
     optimization: {
         runtimeChunk: true,
+        moduleIds: "deterministic",
         minimizer: [
             new CssMinimizerPlugin({
                 parallel: 4,
