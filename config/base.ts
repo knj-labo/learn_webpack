@@ -35,5 +35,6 @@ export const baseConfig: webpack.Configuration = {
             format: ` :msg [:bar] ${chalk.green.bold(":percent")} (:elapsed s)`,
             total: 100
         }) as { apply(...args: any[]): void; },
-    ]
+    ],
+    target: "web"
 };

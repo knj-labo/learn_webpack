@@ -147,3 +147,9 @@ devDependencies:
 + webpack-cli 4.9.2
 + webpack-dev-server 4.8.1
 ```
+
+```shell
+devDependencies:
++ @pmmmwh/react-refresh-webpack-plugin 0.5.5
++ react-refresh 0.12.0
+```
