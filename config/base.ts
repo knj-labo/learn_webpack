@@ -1,6 +1,7 @@
 import * as webpack from "webpack";
 import path from "path";
 
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import chalk from "chalk";
 import ProgressBarPlugin from "progress-bar-webpack-plugin"
 
@@ -21,7 +22,7 @@ export const baseConfig: webpack.Configuration = {
     entry: "./src/index.tsx",
     output: {
         path: path.resolve(process.cwd() + "/build"),
-        filename: "index.js",
+        filename: '[name].bundle.js',
     },
     module: {
         rules: rules
@@ -29,8 +30,11 @@ export const baseConfig: webpack.Configuration = {
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
     },
-    // @see https://github.com/DefinitelyTyped/DefinitelyTyped/issues/50948
     plugins: [
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
+        }),
+        // @see https://github.com/DefinitelyTyped/DefinitelyTyped/issues/50948
         new ProgressBarPlugin({
             format: ` :msg [:bar] ${chalk.green.bold(":percent")} (:elapsed s)`,
             total: 100

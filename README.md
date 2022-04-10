@@ -153,3 +153,20 @@ devDependencies:
 + @pmmmwh/react-refresh-webpack-plugin 0.5.5
 + react-refresh 0.12.0
 ```
+
+
+```shell
+asset index.js 135 KiB [emitted] [minimized] (name: main) 1 related asset
+modules by path ./node_modules/.pnpm/react@18.0.0/node_modules/react/ 6.96 KiB
+  ./node_modules/.pnpm/react@18.0.0/node_modules/react/index.js 190 bytes [built] [code generated]
+  ./node_modules/.pnpm/react@18.0.0/node_modules/react/cjs/react.production.min.js 6.77 KiB [built] [code generated]
+modules by path ./node_modules/.pnpm/react-dom@18.0.0_react@18.0.0/node_modules/react-dom/ 130 KiB
+  ./node_modules/.pnpm/react-dom@18.0.0_react@18.0.0/node_modules/react-dom/index.js 1.33 KiB [built] [code generated]
+  ./node_modules/.pnpm/react-dom@18.0.0_react@18.0.0/node_modules/react-dom/cjs/react-dom.production.min.js 128 KiB [built] [code generated]
+modules by path ./node_modules/.pnpm/scheduler@0.21.0/node_modules/scheduler/ 4.33 KiB
+  ./node_modules/.pnpm/scheduler@0.21.0/node_modules/scheduler/index.js 198 bytes [built] [code generated]
+  ./node_modules/.pnpm/scheduler@0.21.0/node_modules/scheduler/cjs/scheduler.production.min.js 4.14 KiB [built] [code generated]
+./src/index.tsx 337 bytes [built] [code generated]
+webpack 5.72.0 compiled successfully in 6338 ms
+
+```

@@ -13,6 +13,7 @@ specifiers:
   babel-loader: 8.2.4
   chalk: 5.0.1
   css-minimizer-webpack-plugin: 3.4.1
+  mini-css-extract-plugin: 2.6.0
   progress-bar-webpack-plugin: 2.1.0
   react: 18.0.0
   react-dom: 18.0.0
@@ -45,6 +46,7 @@ devDependencies:
   babel-loader: 8.2.4_acba72ea4bf9d339cdfcd8f55cdb7006
   chalk: 5.0.1
   css-minimizer-webpack-plugin: 3.4.1_webpack@5.72.0
+  mini-css-extract-plugin: 2.6.0_webpack@5.72.0
   progress-bar-webpack-plugin: 2.1.0_webpack@5.72.0
   react-refresh: 0.12.0
   speed-measure-webpack-plugin: 1.5.0_webpack@5.72.0
@@ -3057,6 +3059,16 @@ packages:
   /mimic-fn/2.1.0:
     resolution: {integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==}
     engines: {node: '>=6'}
+    dev: true
+
+  /mini-css-extract-plugin/2.6.0_webpack@5.72.0:
+    resolution: {integrity: sha512-ndG8nxCEnAemsg4FSgS+yNyHKgkTB4nPKqCOgh65j3/30qqC5RaSQQXMm++Y6sb6E1zRSxPkztj9fqxhS1Eo6w==}
+    engines: {node: '>= 12.13.0'}
+    peerDependencies:
+      webpack: ^5.0.0
+    dependencies:
+      schema-utils: 4.0.0
+      webpack: 5.72.0_webpack-cli@4.9.2
     dev: true
 
   /minimalistic-assert/1.0.1:

@@ -5,13 +5,18 @@ import TerserPlugin  from 'terser-webpack-plugin';
 import CssMinimizerPlugin from "css-minimizer-webpack-plugin";
 
 import { baseConfig } from "./base.js";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 const prodConfig: webpack.Configuration = merge(baseConfig, {
     mode: "production",
     plugins: [
+        new MiniCssExtractPlugin({
+            filename: "[hash].[name].css",
+        }),
         new BundleAnalyzerPlugin(),
     ],
     optimization: {
+        runtimeChunk: true,
         minimizer: [
             new CssMinimizerPlugin({
                 parallel: 4,
@@ -39,6 +44,16 @@ const prodConfig: webpack.Configuration = merge(baseConfig, {
                 },
             }),
         ],
+        splitChunks: {
+            cacheGroups:{
+                vendors:{
+                    test: /[\\/]node_modules[\\/]/,
+                    chunks: "all",
+                    priority: 10,
+                    enforce: true
+                }
+            }
+        },
     },
 });
 
