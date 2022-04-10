@@ -142,4 +142,8 @@ Progress: resolved 339, reused 338, downloaded 1, added 1, done
 devDependencies:
 + @types/webpack-bundle-analyzer 4.4.1
 
+devDependencies:
+- webpack-cli 4.9.2
++ webpack-cli 4.9.2
++ webpack-dev-server 4.8.1
 ```

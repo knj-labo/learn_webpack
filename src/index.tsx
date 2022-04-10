@@ -9,4 +9,7 @@ const App = () => {
     );
 }
 
-ReactDOM.render(<App/>, document.querySelector('#app'));
+const div = document.createElement('div')
+document.body.appendChild(div)
+
+ReactDOM.render(<App />, document.body);

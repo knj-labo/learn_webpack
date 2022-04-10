@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "clean": "rm build/index.js",
-    "build": "NODE_OPTIONS=--loader=ts-node/esm webpack --config config/prod.ts"
+    "build": "NODE_OPTIONS=--loader=ts-node/esm webpack --config config/prod.ts",
+    "watch": "NODE_OPTIONS=--loader=ts-node/esm webpack serve --open --config config/dev.ts"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
@@ -23,6 +24,7 @@
     "webpack": "5.72.0",
     "webpack-bundle-analyzer": "4.5.0",
     "webpack-cli": "4.9.2",
+    "webpack-dev-server": "4.8.1",
     "webpack-merge": "5.8.0"
   },
   "dependencies": {
