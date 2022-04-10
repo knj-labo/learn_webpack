@@ -116,3 +116,30 @@ Build completed in 4.77s
 $ pnpm i -DE  webpack-merge @types/webpack-merge
 
 ```
+
+```shell
+kenji@PC046 21_learn-webpack % pnpm i -DE webpack-bundle-analyzer
+Packages: +11 -1
++++++++++++-
+Progress: resolved 338, reused 338, downloaded 0, added 11, done
+
+devDependencies:
++ webpack-bundle-analyzer 4.5.0
+- webpack-cli 4.9.2
++ webpack-cli 4.9.2
+
+Progress: resolved 338, reused 338, downloaded 0, added 11, done
+
+devDependencies:
++ webpack-bundle-analyzer 4.5.0
+- webpack-cli 4.9.2
++ webpack-cli 4.9.2
+kenji@PC046 21_learn-webpack % pnpm install -DE @types/webpack-bundle-analyzer
+Packages: +1
++
+Progress: resolved 339, reused 338, downloaded 1, added 1, done
+
+devDependencies:
++ @types/webpack-bundle-analyzer 4.4.1
+
+```
