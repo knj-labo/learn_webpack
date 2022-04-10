@@ -17,8 +17,7 @@ const rules: webpack.RuleSetRule[] = [
     },
 ]
 
-const config: webpack.Configuration = {
-    mode: 'development',
+export const baseConfig: webpack.Configuration = {
     entry: "./src/index.tsx",
     output: {
         path: path.resolve(process.cwd() + "/build"),
@@ -38,5 +37,3 @@ const config: webpack.Configuration = {
         }) as { apply(...args: any[]): void; },
     ]
 };
-
-export default config;

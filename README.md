@@ -32,6 +32,7 @@ dependencies:
 + @babel/preset-env 7.16.11
 ```
 
+// @see https://github.com/TypeStrong/ts-node/issues/1007
 ```shell
 NODE_OPTIONS=--loader=ts-node/esm webpack --config config/base.ts
 ```
@@ -96,4 +97,22 @@ $ pnpm i -DE progress-bar-webpack-plugin @types/progress-bar-webpack-plugin chal
 devDependencies:
 + chalk 5.0.1
 + progress-bar-webpack-plugin 2.1.0
+```
+
+```shell
+kenji@PC046 21_learn-webpack % pnpm build
+
+> webpack-typescript-config@ build /Users/kenji/Project/01_private/21_learn-webpack
+> NODE_OPTIONS=--loader=ts-node/esm webpack --config config/base.ts
+
+(node:24338) ExperimentalWarning: --experimental-loader is an experimental feature. This feature could change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ sealing [==================  ] 92% (2.1 s)(node:24338) ExperimentalWarning: --experimental-loader is an experimental feature. This feature could change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Build completed in 4.77s
+```
+
+```shell
+$ pnpm i -DE  webpack-merge @types/webpack-merge
+
 ```
